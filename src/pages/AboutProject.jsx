@@ -1,20 +1,16 @@
 import React from 'react';
 import {
-  Info,
-  ShieldCheck,
   GitFork,
   Cpu,
   Layers,
   Sparkles,
   Radio,
   TrafficCone,
-  ExternalLink,
   Code2,
   BookOpen,
   Award,
   CheckCircle2
 } from 'lucide-react';
-import { ConceptExplainer } from '../components/ConceptExplainer';
 
 export const AboutProject = () => {
   return (

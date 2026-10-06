@@ -4,16 +4,10 @@ import {
   Plus,
   Play,
   Trash2,
-  AlertCircle,
   CheckCircle2,
-  Clock,
-  Compass,
-  Zap,
-  Activity,
   Layers,
   Flame,
   Shield,
-  Ambulance,
   Radio
 } from 'lucide-react';
 import { useCity } from '../context/CityContext';
@@ -230,7 +224,7 @@ export const EmergencyResponse = () => {
                   Priority queue is empty. Enqueue a new request below.
                 </div>
               ) : (
-                activeEmergencies.map((er, idx) => {
+                activeEmergencies.map((er) => {
                   const isSelected = selectedEmergency?.id === er.id;
                   return (
                     <div

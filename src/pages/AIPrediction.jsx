@@ -2,14 +2,7 @@ import React, { useState } from 'react';
 import {
   Sparkles,
   TrendingUp,
-  Brain,
-  Clock,
-  Compass,
-  CheckCircle,
-  AlertTriangle,
-  Zap,
-  Layers,
-  ArrowRight
+  Brain
 } from 'lucide-react';
 import {
   LineChart,

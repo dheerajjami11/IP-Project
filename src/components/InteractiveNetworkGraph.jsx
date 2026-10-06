@@ -1,12 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
-  MapPin,
-  AlertTriangle,
-  Zap,
-  Info,
-  Car,
-  ShieldCheck,
-  Maximize2
+  Zap
 } from 'lucide-react';
 
 export const InteractiveNetworkGraph = ({

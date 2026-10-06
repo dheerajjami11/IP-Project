@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 import {
   INITIAL_INTERSECTIONS,
   INITIAL_ROADS,
@@ -8,7 +8,6 @@ import {
   INITIAL_AI_PREDICTIONS
 } from '../data/cityData';
 import { EmergencyPriorityQueue } from '../algorithms/EmergencyQueue';
-import { dijkstra } from '../algorithms/Dijkstra';
 
 const CityContext = createContext(null);
 
@@ -16,7 +15,7 @@ export const CityProvider = ({ children }) => {
   const [intersections, setIntersections] = useState(INITIAL_INTERSECTIONS);
   const [roads, setRoads] = useState(INITIAL_ROADS);
   const [signals, setSignals] = useState(INITIAL_SIGNALS);
-  const [sensors, setSensors] = useState(INITIAL_IOT_SENSORS);
+  const [sensors] = useState(INITIAL_IOT_SENSORS);
   const [predictions] = useState(INITIAL_AI_PREDICTIONS);
 
   // Initialize Emergency Priority Queue state

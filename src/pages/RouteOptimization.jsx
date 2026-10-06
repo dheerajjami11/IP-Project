@@ -1,17 +1,9 @@
 import React, { useState } from 'react';
 import {
   Navigation,
-  ArrowRight,
-  Clock,
-  Compass,
   Zap,
-  CheckCircle,
   AlertTriangle,
-  RotateCcw,
-  Sliders,
-  Sparkles,
-  Layers,
-  MapPin
+  Layers
 } from 'lucide-react';
 import { useCity } from '../context/CityContext';
 import { dijkstra, findAlternativeRoutes } from '../algorithms/Dijkstra';
